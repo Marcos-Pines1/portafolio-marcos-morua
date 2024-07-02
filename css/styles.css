@@ -1067,7 +1067,6 @@ progress::-moz-progress-bar {
 }
 
 .details__info li a {
-  text-transform: lowercase;
   color: var(--main-color);
 }
 

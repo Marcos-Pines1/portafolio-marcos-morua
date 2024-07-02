@@ -293,16 +293,3 @@ const scrollUp = () =>{
 
 window.addEventListener('scroll', scrollUp);
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 2500,
-  delay: 300,
-})
-
-sr.reveal('.home, .skills, .section__title, .portfolio__filters')
-sr.reveal('.portfolio__card, .services__card', { delay: 400, distance: '100px', interval: 100 })
-sr.reveal('.about__content, .form__container', { origin: 'right' })
-sr.reveal('.about__img, .social__contact', { origin: 'left' })
