@@ -23,6 +23,17 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!--================ Loading =================-->
+
+    <div class="loading" data-loading>
+      <img src="./assets/loading.svg" alt="cargando" />
+      <img
+        class="circle"
+        src="./assets/loading-circle.svg"
+        alt="circulo del loading"
+      />
+    </div>
+
     <!--================= Header =================-->
 
     <header class="header" id="header">
@@ -119,11 +130,12 @@
           <h1 class="home__title">Mi nombre es Marcos</h1>
           <h3 class="home__subtitle">Soy <span class="auto-type"></span></h3>
           <p class="home__description">
-            I'm a frontend developer with 2 years of experience. I'm passionate
-            about the web and I'm always looking for new opportunities.
+            Soy desarrollador frontend con 3 años de experiencia. Me apasiona el
+            desarrollo web y siempre estoy buscando nuevas oportunidades en este
+            mundo.
           </p>
-          <a href="#about" class="btn">
-            <i class="ri-user-line"></i> More About Me
+          <a href="#sobre-mi" class="btn">
+            <i class="ri-user-line"></i> Mas sobre mi
           </a>
         </article>
       </section>
@@ -138,11 +150,11 @@
               <img src="" alt="Imagen de Marcos" />
             </aside>
             <article class="about__content">
-              <h3>Hi, I'm Marcos Morua, Based in Argentina</h3>
+              <h3>Hola, soy Marcos Morua, residente de Argentina.</h3>
               <p>
-                Web developer, with extensive knowledge and years of experience,
-                working in the web tecnologies and Ui / Ux design, delivering
-                quality work.
+                Desarrollador web con amplio conocimiento y años de experiencia,
+                trabajando en tecnologías web y diseño UI/UX, entregando
+                trabajos de calidad.
               </p>
 
               <!-- Tap Titles -->
@@ -173,16 +185,22 @@
               <article class="about__tab__contents active-cont" id="education">
                 <ul class="about__content-list">
                   <li class="about__content-item">
-                    <span class="span__color">2023 - 2024 </span><br /><br />
-                    Lorem ipsum dolor sit amet
+                    <span class="span__color">2016 - 2023</span><br /><br />
+                    Escuela Secundaria Tecnica 728 - Tecnico en Informatica
+                    Profecional
                   </li>
                   <li class="about__content-item">
                     <span class="span__color">2023 - 2024</span><br /><br />
-                    Lorem ipsum dolor sit amet
+                    Edutin Academy - Fundamentos Profesionales en Desarrollo Web
                   </li>
                   <li class="about__content-item">
-                    <span class="span__color">2023 - 2024</span><br /><br />
-                    Lorem ipsum dolor sit amet
+                    <span class="span__color">2024 - 2024</span><br /><br />
+                    FreeCodeCamp - Responsive Web Design
+                  </li>
+                  <li class="about__content-item">
+                    <span class="span__color">2024 - En Proceso</span
+                    ><br /><br />
+                    CoderHouse - Carrera de Desarrollo Full Stack
                   </li>
                 </ul>
               </article>
@@ -192,16 +210,13 @@
               <article class="about__tab__contents" id="work">
                 <ul class="about__content-list">
                   <li class="about__content-item">
-                    <span class="span__color">2023 - 2024</span><br /><br />
-                    Lorem ipsum dolor sit amet
+                    <span class="span__color">2022 - 2022</span><br /><br />
+                    Practicas Profesionales - Desarrollo de pagina Web de rutas
+                    de colectivos
                   </li>
                   <li class="about__content-item">
-                    <span class="span__color">2023 - 2024</span><br /><br />
-                    Lorem ipsum dolor sit amet
-                  </li>
-                  <li class="about__content-item">
-                    <span class="span__color">2023 - 2024</span><br /><br />
-                    Lorem ipsum dolor sit amet
+                    <span class="span__color">2024 - 2024</span><br /><br />
+                    CoderHouse - Desarrollo de Sitio Web Inspirado en Aorus
                   </li>
                 </ul>
               </article>
@@ -357,188 +372,204 @@
             <span class="portfolio__item active-item" data-filter="all">
               All
             </span>
-            <span class="portfolio__item" data-filter=".web">Web</span>
-            <span class="portfolio__item" data-filter=".app">App</span>
-            <span class="portfolio__item" data-filter=".design">Design</span>
+            <span class="portfolio__item" data-filter=".portafolio-web"
+              >Portafolio</span
+            >
+            <span class="portfolio__item" data-filter=".info">Info</span>
+            <span class="portfolio__item" data-filter=".negocio">Negocio</span>
           </article>
 
           <!-- Portfolio Cards -->
           <section class="portfolio__container grid">
             <!-- Portfolio Card 1 -->
-            <article class="portfolio__card mix web">
+            <article class="portfolio__card mix portafolio-web">
               <img
                 src="./assets/portadas/portafolio_v3.png"
-                alt=""
+                alt="Imagen de portafolio v3"
                 class="portfolio__img"
               />
-              <h3 class="portfolio__title">Web Design</h3>
-              <h4 class="portfolio__subtitle">
-                The services provide for design
-              </h4>
+              <h3 class="portfolio__title">Portafolio Web</h3>
+              <h4 class="portfolio__subtitle">Landing page tipo portafolio</h4>
               <span class="portfolio__button btn-2">
-                More
+                Mas
                 <i class="ri-add-line"></i>
               </span>
               <aside class="portfolio__item-details">
-                <h3 class="details__title">The services provide for design</h3>
+                <h3 class="details__title">Landing page tipo portafolio</h3>
                 <p class="details__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  voluptas cumque minus architecto natus, et illum veniam at
-                  quae est odio impedit quo dicta officiis. Accusantium
-                  excepturi doloribus ea incidunt.
+                  Portafolio con contenido editable full personalizado, el mismo
+                  se encuentra en ingles pero puede ser completamente adaptado
+                  al español sin problema, cuenta con modo oscuro y claro.
                 </p>
                 <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>HTML CSS</span></li>
-                  <li>Role - <span>Frontend</span></li>
+                  <li>Creado - <span>15 abril 2024</span></li>
+                  <li>Tecnologias - <span>HTML, CSS y JS</span></li>
+                  <li>Rol - <span>Frontend</span></li>
                   <li>
-                    View - <span><a href="#">www.domain.com</a></span>
+                    Vista -
+                    <span
+                      ><a
+                        href="https://marcos-pines1.github.io/portafolio-de-paginas-web/portafolio-3/"
+                        >Portafolio 3</a
+                      ></span
+                    >
                   </li>
                 </ul>
               </aside>
             </article>
 
             <!-- Portfolio Card 2 -->
-            <article class="portfolio__card mix app">
+            <article class="portfolio__card mix info">
               <img
                 src="./assets/portadas/portafolio_v3_Phone.jpg"
-                alt=""
+                alt="Imagen de portafolio v3 mobil vista"
                 class="portfolio__img"
               />
-              <h3 class="portfolio__title">Web Design</h3>
-              <h4 class="portfolio__subtitle">
-                The services provide for design
-              </h4>
+              <h3 class="portfolio__title">Landing Page de Informacion</h3>
+              <h4 class="portfolio__subtitle">Página Web de info</h4>
               <span class="portfolio__button btn-2">
-                More
+                Mas
                 <i class="ri-add-line"></i>
               </span>
               <aside class="portfolio__item-details">
-                <h3 class="details__title">The services provide for design</h3>
+                <h3 class="details__title">Página Web de info</h3>
                 <p class="details__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  voluptas cumque minus architecto natus, et illum veniam at
-                  quae est odio impedit quo dicta officiis. Accusantium
-                  excepturi doloribus ea incidunt.
+                  Pagina web completamente personalizable por empresa o cliente
+                  con un negocio, posee una barra lateral que te lleva a las
+                  secciones que aprietes, 4 secciones(Home, info, Images y
+                  Form).
                 </p>
                 <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>HTML CSS</span></li>
-                  <li>Role - <span>Frontend</span></li>
+                  <li>Creado - <span>15 abril 2024</span></li>
+                  <li>Tecnologias - <span>HTML5, CSS y JavaScript</span></li>
+                  <li>Rol - <span>Frontend</span></li>
                   <li>
-                    View - <span><a href="#">www.domain.com</a></span>
+                    Vista - <span><a href="#">www.domain.com</a></span>
                   </li>
                 </ul>
               </aside>
             </article>
 
             <!-- Portfolio Card 3 -->
-            <article class="portfolio__card mix app">
+            <article class="portfolio__card mix portafolio-web">
               <img
                 src="./assets/portadas/portafolio_v2.jpg"
-                alt=""
+                alt="imagen de portafolio v2"
                 class="portfolio__img"
               />
-              <h3 class="portfolio__title">Web Design</h3>
-              <h4 class="portfolio__subtitle">
-                The services provide for design
-              </h4>
+              <h3 class="portfolio__title">Portafolio Web</h3>
+              <h4 class="portfolio__subtitle">Landing page tipo portafolio</h4>
               <span class="portfolio__button btn-2">
-                More
+                Mas
                 <i class="ri-add-line"></i>
               </span>
               <aside class="portfolio__item-details">
-                <h3 class="details__title">The services provide for design</h3>
+                <h3 class="details__title">Landing page tipo portafolio</h3>
                 <p class="details__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  voluptas cumque minus architecto natus, et illum veniam at
-                  quae est odio impedit quo dicta officiis. Accusantium
-                  excepturi doloribus ea incidunt.
+                  Pagina web completamente personalizable de tipo portfolio,
+                  posee una barra superior que te lleva a las secciones que
+                  aprietes, 5 secciones(Home, about, services, works y Form).
                 </p>
                 <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>HTML CSS</span></li>
-                  <li>Role - <span>Frontend</span></li>
+                  <li>Creado - <span>10 noviembre 2023</span></li>
+                  <li>Tecnologias - <span>HTML, CSS y JS</span></li>
+                  <li>Rol - <span>Frontend</span></li>
                   <li>
-                    View - <span><a href="#">www.domain.com</a></span>
+                    Vista -
+                    <span
+                      ><a
+                        href="https://marcos-pines1.github.io/portafolio-de-paginas-web/portafolio-2/"
+                        >Portafolio 2</a
+                      ></span
+                    >
                   </li>
                 </ul>
               </aside>
             </article>
 
             <!-- Portfolio Card 4 -->
-            <article class="portfolio__card mix design">
+            <article class="portfolio__card mix negocio">
               <img
                 src="./assets/portadas/negocio_1.jpg"
-                alt=""
+                alt="imagen de negocio 1"
                 class="portfolio__img"
               />
-              <h3 class="portfolio__title">Web Design</h3>
+              <h3 class="portfolio__title">Landing Page de Negocio</h3>
               <h4 class="portfolio__subtitle">
                 The services provide for design
               </h4>
               <span class="portfolio__button btn-2">
-                More
+                Mas
                 <i class="ri-add-line"></i>
               </span>
               <aside class="portfolio__item-details">
                 <h3 class="details__title">The services provide for design</h3>
                 <p class="details__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  voluptas cumque minus architecto natus, et illum veniam at
-                  quae est odio impedit quo dicta officiis. Accusantium
-                  excepturi doloribus ea incidunt.
+                  Pagina web completamente personalizable por empresa o cliente
+                  con un negocio, posee una barra lateral que te lleva a las
+                  secciones que aprietes, 4 secciones(Home, info, Images y
+                  Form).
                 </p>
                 <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>HTML CSS</span></li>
-                  <li>Role - <span>Frontend</span></li>
+                  <li>Creado - <span>20 diciembre 2023</span></li>
+                  <li>Tecnologias - <span>HTML, CSS y JS</span></li>
+                  <li>Rol - <span>Frontend</span></li>
                   <li>
-                    View - <span><a href="#">www.domain.com</a></span>
+                    Vista -
+                    <span
+                      ><a
+                        href="https://marcos-pines1.github.io/portafolio-de-paginas-web/negocio-1/"
+                        >Landing tipo negocio 1</a
+                      ></span
+                    >
                   </li>
                 </ul>
               </aside>
             </article>
 
             <!-- Portfolio Card 5 -->
-            <article class="portfolio__card mix design">
+            <article class="portfolio__card mix negocio">
               <img
                 src="./assets/portadas/negocio_2.jpg"
-                alt=""
+                alt="imagen de negocio 2"
                 class="portfolio__img"
               />
-              <h3 class="portfolio__title">Design</h3>
-              <h4 class="portfolio__subtitle">
-                The services provide for design
-              </h4>
+              <h3 class="portfolio__title">Landing Page de Negocio</h3>
+              <h4 class="portfolio__subtitle">Página Web Para Negocios</h4>
               <span class="portfolio__button btn-2">
-                More
+                Mas
                 <i class="ri-add-line"></i>
               </span>
               <aside class="portfolio__item-details">
-                <h3 class="details__title">The services provide for design</h3>
+                <h3 class="details__title">Página Web Para Negocios</h3>
                 <p class="details__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  voluptas cumque minus architecto natus, et illum veniam at
-                  quae est odio impedit quo dicta officiis. Accusantium
-                  excepturi doloribus ea incidunt.
+                  Pagina web completamente personalizable por empresa o cliente
+                  con un negocio, posee una barra lateral que te lleva a las
+                  secciones que aprietes, 4 secciones(Home, info, Images y
+                  Form).
                 </p>
                 <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>HTML CSS</span></li>
-                  <li>Role - <span>Frontend</span></li>
+                  <li>Creado - <span>5 enero 2024</span></li>
+                  <li>Tecnologias - <span>HTML, CSS y JS</span></li>
+                  <li>Rol - <span>Frontend</span></li>
                   <li>
-                    View - <span><a href="#">www.domain.com</a></span>
+                    Vista -
+                    <span
+                      ><a
+                        href="https://marcos-pines1.github.io/portafolio-de-paginas-web/negocio-2/"
+                        >Landing tipo negocio 2</a
+                      ></span
+                    >
                   </li>
                 </ul>
               </aside>
             </article>
 
             <!-- Portfolio Card 6 -->
-            <article class="portfolio__card mix web design">
+            <article class="portfolio__card mix portafolio-web">
               <img
                 src="./assets/portadas/portafolio_v1.jpg"
-                alt=""
+                alt="imagen de portafolio v1"
                 class="portfolio__img"
               />
               <h3 class="portfolio__title">Web Design</h3>
@@ -546,23 +577,29 @@
                 The services provide for design
               </h4>
               <span class="portfolio__button btn-2">
-                More
+                Mas
                 <i class="ri-add-line"></i>
               </span>
               <aside class="portfolio__item-details">
-                <h4 class="details__title">The services provide for design</h4>
+                <h3 class="details__title">Landing page tipo portafolio</h3>
                 <p class="details__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  voluptas cumque minus architecto natus, et illum veniam at
-                  quae est odio impedit quo dicta officiis. Accusantium
-                  excepturi doloribus ea incidunt.
+                  Pagina web completamente personalizable de tipo portfolio,
+                  posee una barra superior que te lleva a las secciones que
+                  aprietes, 5 secciones(inicio, sobre mi, servicios, projectos,
+                  testimonios y formulario).
                 </p>
                 <ul class="details__info">
-                  <li>Created - <span>4 dec 2020</span></li>
-                  <li>Technologies - <span>HTML CSS</span></li>
-                  <li>Role - <span>Frontend</span></li>
+                  <li>Creado - <span>20 febrero 2024</span></li>
+                  <li>Tecnologias - <span>HTML, CSS y JS</span></li>
+                  <li>Rol - <span>Frontend</span></li>
                   <li>
-                    View - <span><a href="#">www.domain.com</a></span>
+                    Vista -
+                    <span
+                      ><a
+                        href="https://marcos-pines1.github.io/portafolio-de-paginas-web/portafolio-1/"
+                        >Portafolio 1</a
+                      ></span
+                    >
                   </li>
                 </ul>
               </aside>
