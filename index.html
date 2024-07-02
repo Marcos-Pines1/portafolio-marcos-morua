@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--================= Meta Etiquetas =================-->
+
+    <!--================= Links =================-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+
+    <!-- Remixicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!-- Links main styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--================= Header =================-->
+
+    <header class="header" id="header">
+      <!-- nav logo-->
+      <a href="index.html" class="text__logo"
+        >Marcos<span class="span__color">.</span></a
+      >
+
+      <!-- navbar-->
+      <nav class="navbar" id="menu">
+        <!-- navcontent -->
+        <aside class="nav__content">
+          <a href="#" class="nav__logo"
+            ><img src="assets/logo.svg" alt="Logo"
+          /></a>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#inicio" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#sobre-mi" class="nav__link">Sobre mi</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#habilidades" class="nav__link">Habilidades</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#portafolio" class="nav__link">Portafolio</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#servicios" class="nav__link">Servicios</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#contacto" class="nav__link">Mis Redes</a>
+            </li>
+          </ul>
+
+          <a href="#contacto" class="nav__btn btn">
+            <i class="ri-user-line"></i>
+            Contactame
+          </a>
+
+          <h4>My Address</h4>
+
+          <address>3287 Indiana Avenue, Waialua, Hawaii</address>
+
+          <p>
+            Urgent issue? call us at
+            <a href="tel:8085613846">808-561-3846</a>
+          </p>
+        </aside>
+      </nav>
+
+      <!-- Change theme button-->
+
+      <div class="nav__buttons">
+        <!-- theme button-->
+        <i class="ri-sun-line change-theme" id="theme-button"></i>
+
+        <!-- nav toggle -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--================= Main =================-->
+
+    <main>
+      <!------------- Home Section ------------>
+      <section class="section home" id="inicio">
+        <article class="home__social">
+          <span class="home__social-follow">Sigueme</span>
+          <div class="home__social-links grid">
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-github-line"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-twitter-line"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-linkedin-line"></i>
+            </a>
+          </div>
+        </article>
+        <article class="home__data">
+          <h1 class="home__title">Mi nombre es Marcos</h1>
+          <h3 class="home__subtitle">Soy <span class="auto-type"></span></h3>
+          <p class="home__description">
+            I'm a frontend developer with 2 years of experience. I'm passionate
+            about the web and I'm always looking for new opportunities.
+          </p>
+          <a href="#about" class="btn">
+            <i class="ri-user-line"></i> More About Me
+          </a>
+        </article>
+      </section>
+
+      <!------------- about Section ------------>
+      <section class="section about" id="sobre-mi">
+        <div class="container">
+          <h2 data-heading="Introduccion" class="section__title">Sobre mi</h2>
+          <div class="about__container">
+            <!-- About image -->
+            <aside class="about__img">
+              <img src="" alt="Imagen de Marcos" />
+            </aside>
+            <article class="about__content">
+              <h3>Hi, I'm Marcos Morua, Based in Argentina</h3>
+              <p>
+                Web developer, with extensive knowledge and years of experience,
+                working in the web tecnologies and Ui / Ux design, delivering
+                quality work.
+              </p>
+
+              <!-- Tap Titles -->
+
+              <article class="about__tab__titles">
+                <!-- Education tap -->
+                <div>
+                  <i class="ri-graduation-cap-fill"></i>
+                  <p
+                    class="about__tab-link tab-link active-link"
+                    data-tab-about="education"
+                  >
+                    Educación
+                  </p>
+                </div>
+
+                <!-- Works tap -->
+                <div>
+                  <i class="ri-briefcase-3-line"></i>
+                  <p class="about__tab-link tab-link" data-tab-about="work">
+                    Trabajos
+                  </p>
+                </div>
+              </article>
+
+              <!-- Tap Content -->
+
+              <article class="about__tab__contents active-cont" id="education">
+                <ul class="about__content-list">
+                  <li class="about__content-item">
+                    <span class="span__color">2023 - 2024 </span><br /><br />
+                    Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="about__content-item">
+                    <span class="span__color">2023 - 2024</span><br /><br />
+                    Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="about__content-item">
+                    <span class="span__color">2023 - 2024</span><br /><br />
+                    Lorem ipsum dolor sit amet
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Tap Content -->
+
+              <article class="about__tab__contents" id="work">
+                <ul class="about__content-list">
+                  <li class="about__content-item">
+                    <span class="span__color">2023 - 2024</span><br /><br />
+                    Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="about__content-item">
+                    <span class="span__color">2023 - 2024</span><br /><br />
+                    Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="about__content-item">
+                    <span class="span__color">2023 - 2024</span><br /><br />
+                    Lorem ipsum dolor sit amet
+                  </li>
+                </ul>
+              </article>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!------------- skills Section ------------>
+      <section class="section skills" id="habilidades">
+        <div class="container">
+          <h2 data-heading="Mis Habilidades" class="section__title">
+            Mi Experiencia
+          </h2>
+
+          <article class="skills__container">
+            <!-- Tap Titles -->
+
+            <article class="skills__titles">
+              <!-- Education tap -->
+              <div>
+                <i class="ri-code-box-line"></i>
+                <h2
+                  class="skills-link tab-link active-link"
+                  data-tab-habilities="frontend"
+                >
+                  Frontend
+                </h2>
+              </div>
+
+              <!-- Back-End tap -->
+              <div>
+                <i class="ri-database-2-line"></i>
+                <h2 class="skills-link tab-link" data-tab-habilities="back-end">
+                  Back-End
+                </h2>
+              </div>
+
+              <!-- UI / UX Design tap -->
+              <div>
+                <i class="ri-smartphone-line"></i>
+                <h2 class="skills-link tab-link" data-tab-habilities="design">
+                  UI / UX Design
+                </h2>
+              </div>
+            </article>
+
+            <!-- Tap Content -->
+
+            <article class="skills__tab__contents active-cont" id="frontend">
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>HTML</p>
+                  <p>90%</p>
+                </div>
+                <progress value="90" min="0" max="100"></progress>
+              </div>
+
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>CSS</p>
+                  <p>80%</p>
+                </div>
+                <progress value="80" min="0" max="100"></progress>
+              </div>
+
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>JavaScript</p>
+                  <p>60%</p>
+                </div>
+                <progress value="60" min="0" max="100"></progress>
+              </div>
+
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>ReactJS</p>
+                  <p>25%</p>
+                </div>
+                <progress value="25" min="0" max="100"></progress>
+              </div>
+            </article>
+
+            <!-- Tap Content -->
+
+            <article class="skills__tab__contents" id="back-end">
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>Python</p>
+                  <p>70%</p>
+                </div>
+                <progress value="70" min="0" max="100"></progress>
+              </div>
+
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>NodeJS</p>
+                  <p>60%</p>
+                </div>
+                <progress value="60" min="0" max="100"></progress>
+              </div>
+
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>SQL</p>
+                  <p>50%</p>
+                </div>
+                <progress value="50" min="0" max="100"></progress>
+              </div>
+            </article>
+
+            <!-- Tap Content -->
+
+            <article class="skills__tab__contents" id="design">
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>Figma</p>
+                  <p>85%</p>
+                </div>
+                <progress value="85" min="0" max="100"></progress>
+              </div>
+
+              <!-- Progress div -->
+              <div class="skills__progress">
+                <div>
+                  <p>Adobe Ilustrator</p>
+                  <p>40%</p>
+                </div>
+                <progress value="40" min="0" max="100"></progress>
+              </div>
+            </article>
+          </article>
+        </div>
+      </section>
+
+      <!------------- portfolio Section ------------>
+      <section class="section portfolio" id="portafolio">
+        <div class="container">
+          <h2 data-heading="Mi Portafolio" class="section__title">
+            Trabajos Recientes
+          </h2>
+
+          <!-- Portfolio Filter -->
+          <article class="portfolio__filters">
+            <span class="portfolio__item active-item" data-filter="all">
+              All
+            </span>
+            <span class="portfolio__item" data-filter=".web">Web</span>
+            <span class="portfolio__item" data-filter=".app">App</span>
+            <span class="portfolio__item" data-filter=".design">Design</span>
+          </article>
+
+          <!-- Portfolio Cards -->
+          <section class="portfolio__container grid">
+            <!-- Portfolio Card 1 -->
+            <article class="portfolio__card mix web">
+              <img
+                src="/assets/portadas/Portafolio_v3.png"
+                alt=""
+                class="portfolio__img"
+              />
+              <h3 class="portfolio__title">Web Design</h3>
+              <h4 class="portfolio__subtitle">
+                The services provide for design
+              </h4>
+              <span class="portfolio__button btn-2">
+                More
+                <i class="ri-add-line"></i>
+              </span>
+              <aside class="portfolio__item-details">
+                <h3 class="details__title">The services provide for design</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+
+            <!-- Portfolio Card 2 -->
+            <article class="portfolio__card mix app">
+              <img
+                src="/assets/portadas/Portafolio_v3_Phone.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <h3 class="portfolio__title">Web Design</h3>
+              <h4 class="portfolio__subtitle">
+                The services provide for design
+              </h4>
+              <span class="portfolio__button btn-2">
+                More
+                <i class="ri-add-line"></i>
+              </span>
+              <aside class="portfolio__item-details">
+                <h3 class="details__title">The services provide for design</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+
+            <!-- Portfolio Card 3 -->
+            <article class="portfolio__card mix app">
+              <img
+                src="/assets/portadas/Portafolio_v2.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <h3 class="portfolio__title">Web Design</h3>
+              <h4 class="portfolio__subtitle">
+                The services provide for design
+              </h4>
+              <span class="portfolio__button btn-2">
+                More
+                <i class="ri-add-line"></i>
+              </span>
+              <aside class="portfolio__item-details">
+                <h3 class="details__title">The services provide for design</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+
+            <!-- Portfolio Card 4 -->
+            <article class="portfolio__card mix design">
+              <img
+                src="/assets/portadas/Negocio_1.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <h3 class="portfolio__title">Web Design</h3>
+              <h4 class="portfolio__subtitle">
+                The services provide for design
+              </h4>
+              <span class="portfolio__button btn-2">
+                More
+                <i class="ri-add-line"></i>
+              </span>
+              <aside class="portfolio__item-details">
+                <h3 class="details__title">The services provide for design</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+
+            <!-- Portfolio Card 5 -->
+            <article class="portfolio__card mix design">
+              <img
+                src="/assets/portadas/Negocio_2.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <h3 class="portfolio__title">Design</h3>
+              <h4 class="portfolio__subtitle">
+                The services provide for design
+              </h4>
+              <span class="portfolio__button btn-2">
+                More
+                <i class="ri-add-line"></i>
+              </span>
+              <aside class="portfolio__item-details">
+                <h3 class="details__title">The services provide for design</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+
+            <!-- Portfolio Card 6 -->
+            <article class="portfolio__card mix web design">
+              <img
+                src="/assets/portadas/Portafolio_v1.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+              <h3 class="portfolio__title">Web Design</h3>
+              <h4 class="portfolio__subtitle">
+                The services provide for design
+              </h4>
+              <span class="portfolio__button btn-2">
+                More
+                <i class="ri-add-line"></i>
+              </span>
+              <aside class="portfolio__item-details">
+                <h4 class="details__title">The services provide for design</h4>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <!------------- Portfolio Pop-Up ------------>
+
+      <section class="portfolio__popup">
+        <article class="portfolio__popup-inner">
+          <div class="portfolio__popup-content grid">
+            <span class="portfolio__popup-close">
+              <i class="ri-close-line"></i>
+            </span>
+            <div class="portfolio__img__container">
+              <img
+                src="assets/Portadas/Portafolio_v1.jpg"
+                class="portfolio__popup-img"
+              />
+            </div>
+            <article class="porfolio__popup-info">
+              <div class="porfolio__popup-subtitle">
+                Featured - <span class="popup-subtitle-span">Design</span>
+              </div>
+              <aside class="portfolio__popup-body">
+                <h3 class="details__title">The services provide for design</h3>
+                <p class="details__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  voluptas cumque minus architecto natus, et illum veniam at
+                  quae est odio impedit quo dicta officiis. Accusantium
+                  excepturi doloribus ea incidunt.
+                </p>
+                <ul class="details__info">
+                  <li>Created - <span>4 dec 2020</span></li>
+                  <li>Technologies - <span>HTML CSS</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View - <span><a href="#">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </aside>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <!------------- services Section ------------>
+      <section class="section services" id="servicios">
+        <div class="container">
+          <h2 data-heading="Servicios" class="section__title">
+            Que te Ofresco
+          </h2>
+          <article class="services__container grid">
+            <!-- Service Cards -->
+            <div class="services__card">
+              <div class="services__border__shadow"></div>
+              <div class="services__content">
+                <i class="ri-code-box-line services__icon"></i>
+                <h3 class="services__title">Diseño Web</h3>
+                <p class="services__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel nisi in justo tristique tincidunt.
+                </p>
+                <a href="#servicio-1" class="services__link">
+                  Mas info
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="services__card">
+              <div class="services__border__shadow"></div>
+              <div class="services__content">
+                <i class="ri-database-2-line services__icon"></i>
+                <h3 class="services__title">Back-End</h3>
+                <p class="services__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel nisi in justo tristique tincidunt.
+                </p>
+                <a href="#servicio-2" class="services__link">
+                  Mas info
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="services__card">
+              <div class="services__border__shadow"></div>
+              <div class="services__content">
+                <i class="ri-smartphone-line services__icon"></i>
+                <h3 class="services__title">Diseño UI/UX</h3>
+                <p class="services__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel nisi in justo tristique tincidunt.
+                </p>
+                <a href="#servicio-3" class="services__link">
+                  Mas info
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!------------- Services Modal ------------>
+
+      <!-- Services Modal 1 -->
+      <section class="modal" id="servicio-1">
+        <article class="container">
+          <!-- Services Modal card -->
+          <div class="modal__card">
+            <a href="#cerrar-modal" class="close__modal">
+              <i class="ri-close-line"></i>
+            </a>
+
+            <article class="modal__content">
+              <i class="ri-code-box-line services__icon"></i>
+              <h3 class="services__title">Diseño Web</h3>
+              <p class="services__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                vel nisi in justo tristique tincidunt.
+              </p>
+              <ul class="modal__list">
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Web design</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Con plantillas personalizadas</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Full Responsive</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Para todos los dispositivos</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Asistencia 24/7</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <!-- Services Modal 2 -->
+      <section class="modal" id="servicio-2">
+        <article class="container">
+          <!-- Services Modal card -->
+          <div class="modal__card">
+            <a href="#cerrar-modal" class="close__modal">
+              <i class="ri-close-line"></i>
+            </a>
+
+            <article class="modal__content">
+              <i class="ri-database-2-line services__icon"></i>
+              <h3 class="services__title">Back-End</h3>
+              <p class="services__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                vel nisi in justo tristique tincidunt.
+              </p>
+              <ul class="modal__list">
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Back-End</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Con plantillas personalizadas</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Full Responsive</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Para todos los dispositivos</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Asistencia 24/7</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <!-- Services Modal 3 -->
+      <section class="modal" id="servicio-3">
+        <article class="container">
+          <!-- Services Modal card -->
+          <div class="modal__card">
+            <a href="#cerrar-modal" class="close__modal">
+              <i class="ri-close-line"></i>
+            </a>
+
+            <article class="modal__content">
+              <i class="ri-smartphone-line services__icon"></i>
+              <h3 class="services__title">Diseño UI/UX</h3>
+              <p class="services__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                vel nisi in justo tristique tincidunt.
+              </p>
+              <ul class="modal__list">
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Diseño UI/Ux</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Con plantillas personalizadas</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Todas las vistas</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Para todos los dispositivos</p>
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-line"></i>
+                  <p>Asistencia 24/7</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <!------------- Contact Section ------------>
+
+      <section class="section contact" id="contacto">
+        <h2 data-heading="Mis Redes" class="section__title">Contactame</h2>
+        <div class="container contact__container">
+          <article class="social__contact">
+            <!-- Social cards -->
+            <h3 class="social__title">Mis Redes</h3>
+            <p class="social__paragraph">¡Sigueme y Contactame por aqui!</p>
+            <aside class="social__container">
+              <a href="#">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#">
+                <i class="ri-github-line"></i>
+              </a>
+              <a href="#">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </aside>
+          </article>
+
+          <!-- Form Container -->
+          <article class="form__container">
+            <h3 class="form__title">
+              Enviame un mensaje sobre lo que quieras saber
+            </h3>
+            <!-- Form -->
+            <form class="form" id="contact-form">
+              <!-- Input UserName -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  name="User-name"
+                  class="input"
+                  id="User-name"
+                  title="Nombre sólo acepta letras y espacios en blanco"
+                  name="Username"
+                  required
+                />
+                <label for="User-name">Usuario</label>
+                <span>Usuario</span>
+              </div>
+
+              <!-- Input Email -->
+              <div class="input__container">
+                <input
+                  type="email"
+                  name="User-Email"
+                  class="input"
+                  id="Email-user"
+                  title="Email Incorrecto"
+                  name="Email"
+                  required
+                />
+                <label for="Email-user">Email</label>
+                <span>Email</span>
+              </div>
+
+              <!-- Input Telephone -->
+              <div class="input__container">
+                <input
+                  type="tel"
+                  name="Telephone"
+                  class="input"
+                  id="Phone-user"
+                  title="Numero Incorrecto"
+                  name="Phone-Number"
+                  required
+                />
+                <label for="Phone-user">Telefono</label>
+                <span>Telefono</span>
+              </div>
+
+              <!-- Input Messaje  -->
+              <div class="input__container textarea">
+                <textarea
+                  name="Message"
+                  id="User-Message"
+                  class="input"
+                  required
+                ></textarea>
+                <label for="User-Message">Mensaje</label>
+                <span>Mensaje</span>
+              </div>
+
+              <!-- Messaje form -->
+              <p class="form__message" id="form-message"></p>
+
+              <!-- Button Form -->
+              <button type="submit" class="btn-2">
+                <i class="ri-send-plane-line"></i>
+                Enviar Mensaje
+              </button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== Footer =================-->
+
+    <footer class="footer">
+      <!-- Footer Social Nav-->
+      <section class="footer__nav grid">
+        <!-- Footer title -->
+        <article class="footer__text">
+          <h5 class="text__logo footer__title">Marcos</h5>
+          <h6 class="footer__subtitle">Frontend developer</h6>
+        </article>
+
+        <!-- Footer Nav Links-->
+        <article class="footer__nav__link">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mi</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#contacto">Contactame</a>
+        </article>
+
+        <!-- Footer Social links -->
+        <article class="social__container">
+          <a href="#">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+          <a href="#">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#">
+            <i class="ri-github-line"></i>
+          </a>
+          <a href="#">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+        </article>
+      </section>
+
+      <!-- Footer copy-->
+      <section class="footer__copy">
+        <h5 class="footer__copy-title">!Hecho por &copy; Marcos Morua!</h5>
+        <p class="footer__copy-text">
+          Todos los derechos de la pagina reservados 2023-2024
+        </p>
+      </section>
+    </footer>
+
+    <!--=============== Scroll Up =================-->
+
+    <a href="#inicio" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+  </body>
+
+  <!--================= Scroll Reveal =================-->
+  <script src="js/scrollreveal.min.js"></script>
+
+  <!--================= Mixitup js =================-->
+  <script src="js/mixitup.min.js"></script>
+
+  <!--================= typing script =================-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!--=============== EMAIL JS ===============-->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+
+  <!--================= Scripts =================-->
+  <script src="js/app.js"></script>
+</html>
