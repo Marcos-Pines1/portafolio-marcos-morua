@@ -720,10 +720,15 @@ body.light-theme {
   gap: 4rem;
 }
 
-.about__img {
+.about__img__container{
   flex-basis: 100%;
   max-width: 50%;
   margin: 60px 0;
+}
+
+.about__img{
+  width: 100%;
+  border-radius: 0.8rem;
 }
 
 .about__content {
@@ -1575,7 +1580,7 @@ textarea.input {
     gap: 0;
   }
 
-  .about__img {
+  .about__img__container {
     flex-basis: 30%;
     max-width: 30%;
     border-radius: 8px;
